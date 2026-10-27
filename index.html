@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AwakeKit — Keep Awake, Prevent Sleep &amp; Mouse Jiggler for Windows</title>
+  <meta name="description" content="Keep your Windows PC awake and the screen on with one click from the tray. Timers, an idle-only mouse jiggler with zero pointer movement, and work-hours schedules.">
+  <link rel="icon" href="app-icon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <img src="app-icon.svg" alt="" width="72" height="72">
+      <div>
+        <h1>AwakeKit</h1>
+        <p class="lead">Keep your PC awake and the screen on — one click from the tray.</p>
+        <p class="lead muted" lang="vi">Giữ máy tính không ngủ, màn hình luôn sáng — một cú bấm ở khay hệ thống.</p>
+      </div>
+    </header>
+
+    <p class="cta">
+      <!-- Thay STORE_ID bằng Store ID của app sau khi được duyệt, rồi bỏ class "disabled" -->
+      <a class="button disabled" href="https://apps.microsoft.com/detail/STORE_ID">Coming soon to the Microsoft Store</a>
+    </p>
+
+    <img class="shot" src="screenshots/en-1-keep-awake.png" alt="AwakeKit keeping the PC awake for 47 more minutes">
+
+    <section class="grid">
+      <div><h2>One click, any duration</h2><p>15 min, 30 min, 1 hour, 2 hours, until 17:30 or until you stop it. The tray cup turns amber while your PC stays awake.</p></div>
+      <div><h2>Keep the screen on</h2><p>Stop the display from dimming during presentations, or just keep the PC working with the screen off.</p></div>
+      <div><h2>Idle-only mouse jiggler</h2><p>Stay "Available" in chat apps like Teams or Slack. Nudges only after you've been idle; Zen mode doesn't visibly move the pointer.</p></div>
+      <div><h2>Clean &amp; private</h2><p>Uses the official Windows power API and releases it the moment you stop. Offline — no account, no ads, no tracking.</p></div>
+    </section>
+
+    <section class="pro">
+      <h2>AwakeKit Pro</h2>
+      <p>One-time in-app purchase through the Microsoft Store: work-hours schedules (e.g. Mon–Fri 09:00–17:30), stay awake while chosen apps run, while plugged in or while your PC is busy, and a custom jiggler interval.</p>
+    </section>
+
+    <img class="shot" src="screenshots/en-3-tray-timers.png" alt="AwakeKit tray menu with timers">
+
+    <section id="support">
+      <h2>Support</h2>
+      <p>Email: <a href="mailto:tranxuandat.dev@gmail.com">tranxuandat.dev@gmail.com</a> — please include the version (Pro &amp; About tab) and what happened.</p>
+      <details>
+        <summary>My PC still went to sleep</summary>
+        <p>Check that the tray cup is amber. Closing the lid of a laptop or pressing the power button still puts it to sleep — that is a hardware action AwakeKit does not override. Some company policies can also force sleep.</p>
+      </details>
+      <details>
+        <summary>My chat status still goes to "Away"</summary>
+        <p>Turn on <em>Mouse jiggler</em> in the Awake tab (or the tray menu). Some apps also need the screen on — enable <em>Keep screen on</em>. If an app running as administrator is in front, Windows blocks input from normal apps; switch to another window.</p>
+      </details>
+      <details>
+        <summary>How do I see that AwakeKit is working?</summary>
+        <p>Open an administrator command prompt and run <code>powercfg /requests</code>. While AwakeKit is active it is listed under SYSTEM (and DISPLAY if Keep screen on is enabled). After you click Stop, the entry disappears.</p>
+      </details>
+      <details>
+        <summary>I bought Pro but the app still says Free</summary>
+        <p>Sign in to the Microsoft Store with the account you bought it with and reopen AwakeKit. Still stuck? Email us.</p>
+      </details>
+    </section>
+
+    <hr>
+
+    <section lang="vi">
+      <h2>Tiếng Việt</h2>
+      <p>AwakeKit giữ máy tính không ngủ và màn hình luôn sáng khi bạn tải file, trình chiếu, build lâu hay điều khiển từ xa. Bấm vào tách cà phê ở khay để bật/tắt; bấm phải để hẹn giờ 15 phút, 1 giờ, đến 17:30… Jiggler chuột giữ trạng thái "Available" trên app chat, chỉ nhích khi bạn rời tay. Bản <strong>Pro</strong> (mua một lần qua Microsoft Store) thêm lịch giờ làm, tự bật khi app chạy, khi cắm sạc hoặc khi máy bận.</p>
+      <img class="shot" src="screenshots/vi-1-giu-may-thuc.png" alt="AwakeKit giữ máy thức, còn 47 phút">
+      <p>Hỗ trợ: <a href="mailto:tranxuandat.dev@gmail.com">tranxuandat.dev@gmail.com</a></p>
+    </section>
+
+    <footer class="muted">
+      © 2026 dooxx · <a href="privacy.html">Privacy policy / Chính sách quyền riêng tư</a>
+    </footer>
+  </main>
+</body>
+</html>
